@@ -1,7 +1,11 @@
 ## longestFall
+
 #### Description
-Write a function called longestFall, which accepts an array of integers, and returns  the length of the longest consecutive decrease of integers.
+
+Write a function called longestFall, which accepts an array of integers, and returns the length of the longest consecutive decrease of integers.
+
 #### Examples
+
 `longestFall([5, 3, 1, 3, 0])` // 3, 5-3-1 is the longest consecutive sequence of decreasing integers <br>
 `longestFall([2, 2, 1])` // 2, 2-1 is the longest consecutive sequence of decreasing integers <br>
 `longestFall([2, 2, 2])` // 1, 2 is the longest consecutive sequence of decreasing integers <br>
@@ -10,12 +14,13 @@ Write a function called longestFall, which accepts an array of integers, and ret
 `longestFall([])` // 0
 
 #### Solution
+
 ```js
 function longestFall(arr) {
   let tempCount = 1;
   let longest = 0;
   for (let i = 0; i < arr.length; i++) {
-    if (arr[i] > arr[i+1]) {
+    if (arr[i] > arr[i + 1]) {
       tempCount++;
     } else {
       if (tempCount > longest) {
@@ -27,5 +32,7 @@ function longestFall(arr) {
   return longest;
 }
 ```
+
 ##### Tags
+
 `#sliding-window` `#easy`
