@@ -13,10 +13,6 @@ You need to help them find out their common interest with the least list index s
 `minIndexSum(["Taco Bell", "Tapioca Express", "Burger King", "KFC"],["KFC", "Taco Bell", "Burger King"]) // ["Taco Bell]`<br>
 `minIndexSum(["Taco Bell", "Burger King", "KFC"],["KFC", "Zaxby's", "Taco Bell"]) // ["KFC", "Taco Bell"]`
 
-#### Constraints
-
-Time Complexity: O(N)
-
 #### Solution
 
 ```js
